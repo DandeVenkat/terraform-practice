@@ -12,13 +12,13 @@ data "azurerm_subnet" "existing_block" {
 
 }
 
-resource "azurerm_subnet" "subnet_block1" {
+/*resource "azurerm_subnet" "subnet_block1" {
   name = "subent4"
   resource_group_name = data.azurerm_resource_group.existing_rg.name
   virtual_network_name = data.azurerm_virtual_network.existing_vnet.name
   address_prefixes = [("10.0.4.0/24")]
 
-}
+}*/
 
 
 data "azurerm_network_interface" "nic_block" {
